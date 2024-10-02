@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { NextUIProvider } from "@nextui-org/react";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
 import "./globals.css";
 
 const font = Poppins({
@@ -21,7 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} antialiased`}>
-        <NextUIProvider>{children}</NextUIProvider>
+        <NextUIProvider>
+          <NextThemesProvider attribute="class">
+            {children}
+          </NextThemesProvider>
+        </NextUIProvider>
       </body>
     </html>
   );
