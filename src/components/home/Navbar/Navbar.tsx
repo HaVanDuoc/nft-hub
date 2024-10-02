@@ -20,7 +20,7 @@ const Navbar: React.FC<Props> = ({ toggleNav }) => {
             <Link
               href={nav.href}
               key={nav.id}
-              className="font-bold hover:text-gradient"
+              className="font-semibold hover:text-gradient"
             >
               {nav.name}
             </Link>

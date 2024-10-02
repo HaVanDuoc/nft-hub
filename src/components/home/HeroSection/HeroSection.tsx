@@ -14,8 +14,8 @@ const HeroSection = () => {
       <div className="w-full space-y-8 text-center lg:text-left">
         <h1 className="">High Quality NFT Collection</h1>
         <p>
-          A 890 piece custom Nfthub's collection is joining the NFT space on
-          Opensea.
+          {`A 890 piece custom Nfthub's collection is joining the NFT space on
+          Opensea.`}
         </p>
         <ButtonGradient endContent={<FaArrowRight />}>
           View in OPENSEA
