@@ -1,15 +1,17 @@
-"use client";
-
-import ButtonGradient from "@/components/common/ButtonGradient";
-import { IMG_BANNER } from "@/libs";
-import { Avatar, AvatarGroup } from "@nextui-org/react";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import ButtonGradient from "@/components/common/ButtonGradient";
+import { Avatar, AvatarGroup } from "@nextui-org/react";
 import { FaArrowRight } from "react-icons/fa";
+
+import IMG_BANNER from "@/assets/header/banner.png";
+import AVATAR_1 from "@/assets/avatar/avatar (1).png";
+import AVATAR_2 from "@/assets/avatar/avatar (2).png";
+import AVATAR_3 from "@/assets/avatar/avatar (3).png";
 
 const HeroSection = () => {
   return (
-    <section className="container h-[calc(100vh-13vh)] flex flex-col lg:flex-row gap-10 items-center my-[13vh] lg:my-0">
+    <section className="container lg:h-[calc(100vh-13vh)] flex flex-col lg:flex-row gap-10 items-center my-[13vh] lg:my-0">
       {/* Left */}
       <div className="w-full space-y-8 text-center lg:text-left">
         <h1 className="">High Quality NFT Collection</h1>
@@ -23,9 +25,9 @@ const HeroSection = () => {
 
         <div className="flex flex-row gap-3 items-center justify-center lg:justify-start">
           <AvatarGroup isBordered>
-            <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
-            <Avatar src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
-            <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
+            <Avatar src={AVATAR_1.src} alt="avatar user" />
+            <Avatar src={AVATAR_2.src} alt="avatar user" />
+            <Avatar src={AVATAR_3.src} alt="avatar user" />
           </AvatarGroup>
 
           <div>
@@ -43,6 +45,7 @@ const HeroSection = () => {
             alt="banner"
             width={IMG_BANNER.width}
             height={IMG_BANNER.height}
+            priority
             className="w-full h-full object-cover"
           />
         </div>

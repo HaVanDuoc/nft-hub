@@ -13,12 +13,12 @@ const ButtonGradient: React.FC<Props> = ({
   className = "",
 }) => {
   return (
-      <Button
-      className={`bg-gradient text-light font-bold rounded-full py-6 px-10 ${className}`}
-      endContent={endContent}
-      >
-        {children}
-      </Button>
+    <Button
+      className={`bg-gradient text-light font-bold rounded-full py-6 px-10 group ${className}`}
+      endContent={<div className="group-hover:-rotate-45 animation">{endContent}</div>}
+    >
+      {children}
+    </Button>
   );
 };
 
