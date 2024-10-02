@@ -1,5 +1,4 @@
 import { nextui } from "@nextui-org/react";
-import daisyui from "daisyui"
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -36,12 +35,13 @@ const config: Config = {
       colors: {
         light: "#ffffff",
         dark: "#000000",
+        gradient: "var(--gradient-color)"
       },
       backgroundImage: {
-        main: "linear-gradient(90deg, #2600FC 0%, #FF00EA 100%)",
+        gradient: "var(--gradient-color)",
       },
     }
   },
-  plugins: [nextui(), daisyui],
+  plugins: [nextui()],
 };
 export default config;

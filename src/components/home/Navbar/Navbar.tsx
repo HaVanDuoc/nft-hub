@@ -3,7 +3,7 @@ import Link from "next/link";
 import Logo from "@/components/home/Logo";
 import { MEDIA_ICONS, NAV_LINKS } from "@/constants/header";
 import { IoMenu } from "react-icons/io5";
-import AnimationClick from "@/components/animation/AnimationClick";
+import AnimationClick from "@/components/common/AnimationClick";
 
 type Props = {
   toggleNav: () => void;

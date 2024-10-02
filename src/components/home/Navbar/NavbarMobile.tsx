@@ -1,8 +1,8 @@
 import React from "react";
 import Logo from "@/components/home/Logo";
 import { IoIosAdd, IoIosClose } from "react-icons/io";
-import { NAV_LINKS } from "@/constants/header";
-import AnimationClick from "@/components/animation/AnimationClick";
+import { MEDIA_ICONS, NAV_LINKS } from "@/constants/header";
+import AnimationClick from "@/components/common/AnimationClick";
 
 type Props = {
   show: boolean;
@@ -50,6 +50,15 @@ const NavbarMobile: React.FC<Props> = ({ show, toggleNav }) => {
           </div>
         ))}
       </nav>
+
+      {/* Media */}
+      <div className="flex flex-row gap-3 items-center justify-center my-5">
+        {MEDIA_ICONS.map((media) => (
+          <div className="border border-gray-200 hover:border-bg-gra rounded overflow-hidden p-2 cursor-pointer text-xl" key={media.id}>
+            {media.icon}
+          </div>
+        ))}
+      </div>
     </nav>
   );
 };

@@ -4,12 +4,42 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --primary-color: #2600FC;
+    --secondary-color: #FF00EA;
+    --text-color: #7B7583;
+    --gradient-color: linear-gradient(-23deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
 
+@layer base {
+    h1 {
+        @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold;
+    }
+
+    h2 {
+        @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold;
+    }
+
+    h3 {
+        @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium;
+    }
+
+    p {
+        @apply text-[var(--text-color)]
+    }
+}
 
 @layer utilities {
     .text-gradient {
-        background: linear-gradient(90deg, #2600FC 0%, #FF00EA 100%);
+        background: var(--gradient-color);
         @apply bg-clip-text text-transparent transition-all duration-300;
+    }
+
+    .border-gradient {
+        border: 1px solid transparent;
+        border-image: var(--gradient-color);
+        border-image-slice: 1;
+        border-radius: 0.5rem;
     }
 
     .animation {
