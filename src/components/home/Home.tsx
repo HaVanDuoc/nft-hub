@@ -4,6 +4,7 @@ import HeroSection from "@/components/home/HeroSection/HeroSection";
 import BrandSection from "@/components/home/BrandSection/BrandSection";
 import CollectionSection from "@/components/home/collectionSection/CollectionSection";
 import ChooseUsSection from "@/components/home/whyChooseUsSection/ChooseUsSection";
+import StatsSection from "@/components/home/statsSection/StatsSection";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <BrandSection />
       <CollectionSection />
       <ChooseUsSection />
+      <StatsSection />
     </div>
   );
 };

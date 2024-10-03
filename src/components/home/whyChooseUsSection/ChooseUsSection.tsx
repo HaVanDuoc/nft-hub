@@ -13,7 +13,7 @@ const ChooseUsSection = () => {
           title="Why choose us?"
           gradientWords={["choose", "us?"]}
         />
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-8 items-center justify-center">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-8 items-center justify-center">
           {CHOOSES.map((choose, index) => (
             <div
               className={` ${index % 2 === 0 ? "md:pb-10" : "md:pt-10"}`}
