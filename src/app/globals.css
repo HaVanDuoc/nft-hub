@@ -11,21 +11,26 @@
     --gradient-color: linear-gradient(-23deg, var(--primary-color) 0%, var(--secondary-color) 100%);
 }
 
-@layer base {   
+@layer base {
+
     h1 {
         @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold;
     }
 
     h2 {
-        @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold;
+        @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold;
     }
 
     h3 {
-        @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium;
+        @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold;
+    }
+
+    h4 {
+        @apply text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold;
     }
 
     p {
-        @apply text-[var(--text-color)]
+        @apply text-[var(--text-color)] text-sm sm:text-base
     }
 }
 

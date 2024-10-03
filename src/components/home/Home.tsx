@@ -3,6 +3,7 @@ import NavbarContainer from "@/components/home/Navbar/NavbarContainer";
 import HeroSection from "@/components/home/HeroSection/HeroSection";
 import BrandSection from "@/components/home/BrandSection/BrandSection";
 import CollectionSection from "@/components/home/collectionSection/CollectionSection";
+import ChooseUsSection from "@/components/home/whyChooseUsSection/ChooseUsSection";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       </header>
       <BrandSection />
       <CollectionSection />
+      <ChooseUsSection />
     </div>
   );
 };
