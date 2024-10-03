@@ -11,13 +11,13 @@
     --gradient-color: linear-gradient(-23deg, var(--primary-color) 0%, var(--secondary-color) 100%);
 }
 
-@layer base {
+@layer base {   
     h1 {
         @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold;
     }
 
     h2 {
-        @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold;
+        @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold;
     }
 
     h3 {
