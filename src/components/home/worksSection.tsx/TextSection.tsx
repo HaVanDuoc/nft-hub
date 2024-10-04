@@ -19,7 +19,7 @@ const TextSection: React.FC<Props> = ({
   return (
     <div className="flex flex-col gap-6 items-center sm:items-start text-center sm:text-left">
       <div className="text-gradient font-bold text-lg">
-        {idx ? FormatNumberToString(idx) : ""}
+        {idx ? FormatNumberToString(idx) + '.' : ""}
       </div>
       <h3>{title}</h3>
       <div className="space-y-4">

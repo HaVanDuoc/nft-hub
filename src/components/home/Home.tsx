@@ -7,10 +7,11 @@ import ChooseUsSection from "@/components/home/whyChooseUsSection/ChooseUsSectio
 import StatsSection from "@/components/home/statsSection/StatsSection";
 import WorksSection from "@/components/home/worksSection.tsx/WorksSection";
 import DropSection from "@/components/home/dropSection/DropSection";
+import RoadmapSection from "./roadmapSection/RoadmapSection";
 
 const Home = () => {
   return (
-    <div className="space-y-20 pb-20">
+    <div className="pb-20">
       <header className="bg-gradient-to-r from-pink-200 via-purple-200 to-blue-200 dark:from-dark dark:to-dark">
         <NavbarContainer />
         <HeroSection />
@@ -21,6 +22,7 @@ const Home = () => {
       <StatsSection />
       <WorksSection />
       <DropSection />
+      <RoadmapSection />
     </div>
   );
 };

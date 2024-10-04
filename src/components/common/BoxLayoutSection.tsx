@@ -11,7 +11,7 @@ const BoxLayoutSection = ({
 }) => {
   return (
     <section
-      className={`container flex flex-col justify-center items-center gap-16 ${className}`}
+      className={`container flex flex-col justify-center items-center gap-16 my-24 ${className}`}
     >
       {children}
 
