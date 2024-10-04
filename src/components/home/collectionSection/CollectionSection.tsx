@@ -35,6 +35,7 @@ const CollectionSection = () => {
         <TitleComponent
           title="Nfthub's collection"
           gradientWords={["collection"]}
+          className="text-center"
         />
         <Swiper
           autoplay={{

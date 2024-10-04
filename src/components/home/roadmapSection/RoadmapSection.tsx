@@ -21,7 +21,7 @@ const RoadmapSection = () => {
   return (
     <AnimationFadeUpComponent>
       <BoxLayoutSection>
-        <TitleComponent title="Nfthub's Roadmap" gradientWords={["Roadmap"]} />
+        <TitleComponent title="Nfthub's Roadmap" gradientWords={["Roadmap"]} className="text-center" />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 lg:gap-12 ">
           {ROADMAP.map((road, index) => (
@@ -42,7 +42,7 @@ const RoadmapSection = () => {
 
               <div className="px-5 space-y-3">
                 {road.bottom.map((item) => (
-                  <p className="text-black" key={item.id}>{item.value}</p>
+                  <p className="text-black dark:text-light" key={item.id}>{item.value}</p>
                 ))}
               </div>
             </div>
