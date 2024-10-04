@@ -11,6 +11,10 @@
     --gradient-color: linear-gradient(-23deg, var(--primary-color) 0%, var(--secondary-color) 100%);
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 @layer base {
 
     h1 {
