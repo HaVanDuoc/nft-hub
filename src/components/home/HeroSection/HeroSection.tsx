@@ -13,7 +13,7 @@ import AnimationFadeUpComponent from "@/components/common/AnimationFadeUpCompone
 const HeroSection = () => {
   return (
     <AnimationFadeUpComponent>
-      <section className="container lg:h-[calc(100vh-13vh)] flex flex-col lg:flex-row gap-10 items-center my-[13vh] lg:my-0">
+      <section className="container lg:h-[calc(100vh-13vh)] flex flex-col lg:flex-row gap-10 items-center py-[13vh] lg:py-0">
         {/* Left */}
         <div className="w-full space-y-8 text-center lg:text-left">
           <h1 className="">High Quality NFT Collection</h1>

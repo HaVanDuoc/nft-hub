@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { BRANDS } from "@/constants/brands";
+import { BRANDS } from "@/data/home/brands";
 import { motion } from "framer-motion";
 import BoxLayoutSection from "@/components/common/BoxLayoutSection";
 

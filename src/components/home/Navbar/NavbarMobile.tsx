@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "@/components/home/Logo";
 import { IoIosAdd, IoIosClose } from "react-icons/io";
-import { MEDIA_ICONS, NAV_LINKS } from "@/constants/header";
+import { MEDIA_ICONS, NAV_LINKS } from "@/data/home/header";
 import AnimationClick from "@/components/common/AnimationClick";
 import ThemeSwitcher from "../ThemeSwitcher";
 

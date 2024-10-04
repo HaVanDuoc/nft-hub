@@ -5,6 +5,7 @@ import BrandSection from "@/components/home/BrandSection/BrandSection";
 import CollectionSection from "@/components/home/collectionSection/CollectionSection";
 import ChooseUsSection from "@/components/home/whyChooseUsSection/ChooseUsSection";
 import StatsSection from "@/components/home/statsSection/StatsSection";
+import WorksSection from "@/components/home/worksSection.tsx/WorksSection";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <CollectionSection />
       <ChooseUsSection />
       <StatsSection />
+      <WorksSection />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Logo from "@/components/home/Logo";
-import { MEDIA_ICONS, NAV_LINKS } from "@/constants/header";
+import { MEDIA_ICONS, NAV_LINKS } from "@/data/home/header";
 import { IoMenu } from "react-icons/io5";
 import AnimationClick from "@/components/common/AnimationClick";
 import ThemeSwitcher from "@/components/home/ThemeSwitcher";
