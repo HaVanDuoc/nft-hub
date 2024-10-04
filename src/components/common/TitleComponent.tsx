@@ -15,7 +15,7 @@ const TitleComponent = ({
   const words = title.split(" ");
 
   return (
-    <h2 className={className}>
+    <h2 className={`text-center ${className}`}>
       {words.map((word, index) => (
         <span
           key={index}

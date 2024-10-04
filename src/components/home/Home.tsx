@@ -7,7 +7,9 @@ import ChooseUsSection from "@/components/home/whyChooseUsSection/ChooseUsSectio
 import StatsSection from "@/components/home/statsSection/StatsSection";
 import WorksSection from "@/components/home/worksSection.tsx/WorksSection";
 import DropSection from "@/components/home/dropSection/DropSection";
-import RoadmapSection from "./roadmapSection/RoadmapSection";
+import RoadmapSection from "@/components/home/roadmapSection/RoadmapSection";
+import MeetSection from "@/components/home/meetSection/MeetSection";
+import QuestionSection from "@/components/home/questionSection/QuestionSection";
 
 const Home = () => {
   return (
@@ -23,6 +25,8 @@ const Home = () => {
       <WorksSection />
       <DropSection />
       <RoadmapSection />
+      <MeetSection />
+      <QuestionSection />
     </div>
   );
 };

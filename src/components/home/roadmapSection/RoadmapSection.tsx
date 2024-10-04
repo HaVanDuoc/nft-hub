@@ -21,11 +21,14 @@ const RoadmapSection = () => {
   return (
     <AnimationFadeUpComponent>
       <BoxLayoutSection>
-        <TitleComponent title="Nfthub's Roadmap" gradientWords={["Roadmap"]} className="text-center" />
+        <TitleComponent title="Nfthub's Roadmap" gradientWords={["Roadmap"]} />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 lg:gap-12 ">
           {ROADMAP.map((road, index) => (
-            <div className="border border-gray-300 rounded-3xl p-5 sm:p-7 relative" key={index}>
+            <div
+              className="border border-gray-300 rounded-3xl p-5 sm:p-7 relative"
+              key={index}
+            >
               <div className="flex flex-row justify-between items-center">
                 <div className="text-lg sm:text-xl font-bold text-gradient">
                   Phase {FormatNumberToString(index + 1)}
@@ -42,7 +45,9 @@ const RoadmapSection = () => {
 
               <div className="px-5 space-y-3">
                 {road.bottom.map((item) => (
-                  <p className="text-black dark:text-light" key={item.id}>{item.value}</p>
+                  <p className="text-black dark:text-light" key={item.id}>
+                    {item.value}
+                  </p>
                 ))}
               </div>
             </div>
