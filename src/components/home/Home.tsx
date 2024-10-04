@@ -6,6 +6,7 @@ import CollectionSection from "@/components/home/collectionSection/CollectionSec
 import ChooseUsSection from "@/components/home/whyChooseUsSection/ChooseUsSection";
 import StatsSection from "@/components/home/statsSection/StatsSection";
 import WorksSection from "@/components/home/worksSection.tsx/WorksSection";
+import DropSection from "@/components/home/dropSection/DropSection";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <ChooseUsSection />
       <StatsSection />
       <WorksSection />
+      <DropSection />
     </div>
   );
 };
