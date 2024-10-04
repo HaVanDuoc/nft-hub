@@ -10,6 +10,7 @@ import DropSection from "@/components/home/dropSection/DropSection";
 import RoadmapSection from "@/components/home/roadmapSection/RoadmapSection";
 import MeetSection from "@/components/home/meetSection/MeetSection";
 import QuestionSection from "@/components/home/questionSection/QuestionSection";
+import CtaSection from "@/components/home/CtaSection/CtaSection";
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       <RoadmapSection />
       <MeetSection />
       <QuestionSection />
+      <CtaSection />
     </div>
   );
 };
