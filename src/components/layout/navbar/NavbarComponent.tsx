@@ -2,13 +2,13 @@
 
 import React from "react";
 import Link from "next/link";
-import Logo from "@/components/home/Logo";
 import { MEDIA_ICONS, NAV_LINKS } from "@/data/home/header";
 import { IoMenu } from "react-icons/io5";
 import AnimationClick from "@/components/common/AnimationClick";
-import ThemeSwitcher from "@/components/home/ThemeSwitcher";
+import ThemeSwitcher from "@/components/ui/ThemeSwitcherComponent";
 import { Navbar } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
+import LogoComponent from "@/components/ui/LogoComponent";
 
 type Props = {
   toggleNav: () => void;
@@ -23,7 +23,7 @@ const NavbarComponent: React.FC<Props> = ({ toggleNav }) => {
       className="w-full h-[13vh] bg-gradient-to-r from-pink-200 via-purple-200 to-blue-200 dark:from-dark dark:to-dark"
     >
       <div className="container h-full mx-auto flex items-center justify-between">
-        <Logo />
+        <LogoComponent logo="NFTHub" />
         {/* Nav Links */}
         <nav className="hidden lg:flex flex-row gap-7">
           {NAV_LINKS.map((nav) => (

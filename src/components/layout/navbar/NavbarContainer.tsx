@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import NavbarMobile from "./NavbarMobile";
 import NavbarComponent from "./NavbarComponent";
+import NavbarMobile from "./NavbarMobile";
 
 const NavbarContainer = () => {
   const [showNav, setShow] = useState(false);

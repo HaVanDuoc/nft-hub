@@ -1,9 +1,9 @@
 import React from "react";
-import Logo from "@/components/home/Logo";
 import { IoIosAdd, IoIosClose } from "react-icons/io";
 import { MEDIA_ICONS, NAV_LINKS } from "@/data/home/header";
 import AnimationClick from "@/components/common/AnimationClick";
-import ThemeSwitcher from "@/components/home/ThemeSwitcher";
+import ThemeSwitcher from "@/components/ui/ThemeSwitcherComponent";
+import LogoComponent from "@/components/ui/LogoComponent";
 
 type Props = {
   show: boolean;
@@ -22,7 +22,7 @@ const NavbarMobile: React.FC<Props> = ({ show, toggleNav }) => {
     >
       <div className="h-1 bg-main w-full"></div>
       <div className={`flex flex-row justify-between items-center ${py} ${px}`}>
-        <Logo />
+        <LogoComponent logo="NFTHub" />
         <div className="text-3xl" onClick={toggleNav}>
           <AnimationClick>
             <IoIosClose />

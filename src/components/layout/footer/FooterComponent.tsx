@@ -1,18 +1,18 @@
-import Logo from "@/components/home/Logo";
+import LogoComponent from "@/components/ui/LogoComponent";
 import { FOOTER_NAV } from "@/data/footer/footer";
 import { MEDIA_ICONS } from "@/data/home/header";
 import Link from "next/link";
 import React from "react";
 import { IoIosArrowUp } from "react-icons/io";
 
-const Footer = () => {
+const FooterComponent = () => {
   const gap = "gap-10 md:gap-20";
 
   return (
     <footer className="py-8 pt-14 sm:pt-20 border-t border-gray-300">
       <div className={`container grid md:grid-cols-2 ${gap}`}>
         <div className="space-y-5 lg:text-left">
-          <Logo className="text-gradient" />
+          <LogoComponent logo="NFTHub" className="text-gradient" />
           <p className="lg:w-[70%]">
             Join our Discord channel or follow us on Twitter to keep up to date
             with our latest work and announcements.
@@ -56,4 +56,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterComponent;
