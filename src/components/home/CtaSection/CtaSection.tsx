@@ -17,7 +17,7 @@ const CtaSection = () => {
         quality={100}
         className="object-cover"
       />
-      <BoxLayoutSection>
+      <BoxLayoutSection divider={false}>
         <div className="py-20 flex flex-col gap-5 sm:gap-8 justify-center items-center text-center">
           <TitleComponent
             title="Let's start minting"

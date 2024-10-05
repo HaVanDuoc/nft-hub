@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
-import Header from "@/components/layout/ui/header/Header";
-import Footer from "@/components/layout/ui/footer/Footer";
 import "./globals.css";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -27,11 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${font.className} antialiased`}>
         <NextUIProvider>
-          <NextThemesProvider attribute="class">
-            <Header />
-            {children}
-            <Footer />
-          </NextThemesProvider>
+          <NextThemesProvider attribute="class">{children}</NextThemesProvider>
         </NextUIProvider>
       </body>
     </html>

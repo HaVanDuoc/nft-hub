@@ -5,11 +5,13 @@ import Image from "next/image";
 interface BoxLayoutSectionProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   className?: string;
+  divider?: boolean;
 }
 
 const BoxLayoutSection = ({
   children,
   className = "",
+  divider = true,
   ...props
 }: BoxLayoutSectionProps) => {
   return (
@@ -19,9 +21,11 @@ const BoxLayoutSection = ({
     >
       {children}
 
-      <div>
-        <Image src={DIVIDER} alt="icon divider" className="w-auto h-auto" />
-      </div>
+      {divider && (
+        <div>
+          <Image src={DIVIDER} alt="icon divider" className="w-auto h-auto" />
+        </div>
+      )}
     </section>
   );
 };
