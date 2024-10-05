@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import Navbar from "./Navbar";
 import NavbarMobile from "./NavbarMobile";
+import NavbarComponent from "./NavbarComponent";
 
 const NavbarContainer = () => {
   const [showNav, setShow] = useState(false);
@@ -32,7 +32,7 @@ const NavbarContainer = () => {
 
   return (
     <>
-      <Navbar toggleNav={toggleNav} />
+      <NavbarComponent toggleNav={toggleNav} />
       <div ref={containerRef}>
         <NavbarMobile show={showNav} toggleNav={toggleNav} />
       </div>

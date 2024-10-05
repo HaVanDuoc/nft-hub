@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "@/components/layout/ui/header/Header";
 import Footer from "@/components/layout/ui/footer/Footer";
+import NavbarContainer from "@/components/layout/ui/header/Navbar/NavbarContainer";
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
-      <Header />
+      <NavbarContainer />
       {children}
       <Footer />
     </div>
