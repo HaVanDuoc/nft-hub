@@ -6,9 +6,9 @@ import { SiIconify } from "react-icons/si";
 
 export default function Page404() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-white">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-white p-5">
       <motion.h1
-        className="max-h-[400px] flex items-center justify-center lg:text-[400px] md:text[300px] text-[200px] font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-700 via-purple-900 to-orange-700"
+        className="max-h-[400px] lg:h-[400px] md:h-[300px] h-[150px] lg:text-[400px] md:text-[300px] text-[150px] font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-700 via-purple-900 to-orange-700 flex items-center justify-center "
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
