@@ -6,7 +6,7 @@ type Props = {
 
 const FloatingContainer: React.FC<Props> = ({ items }) => {
   return (
-    <div className="fixed bottom-[3vh] right-[2vw] flex flex-col gap-3 sm:gap-5 items-center justify-center z-[999]">
+    <div className="fixed bottom-[3vh] right-[2vw] flex flex-col gap-3 sm:gap-5 items-center justify-center z-[199]">
       {items.map((item, index) => (
         <div key={index}>{item}</div>
       ))}
