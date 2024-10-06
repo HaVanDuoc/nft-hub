@@ -19,7 +19,7 @@ const TitleComponent = ({
       {words.map((word, index) => (
         <span
           key={index}
-          className={gradientWords.includes(word) ? "text-gradient" : ""}
+          className={gradientWords.includes(word) ? "text-gradient " : ""}
         >
           {word}{" "}
         </span>
