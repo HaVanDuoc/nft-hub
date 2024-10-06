@@ -1,5 +1,6 @@
 import { Button } from "@nextui-org/react";
 import React from "react";
+import AnimationClick from "./AnimationClick";
 
 type Props = {
   children: React.ReactNode;
@@ -13,12 +14,16 @@ const ButtonGradient: React.FC<Props> = ({
   className = "",
 }) => {
   return (
-    <Button
-      className={`bg-gradient text-light font-bold rounded-full py-6 px-10 group ${className}`}
-      endContent={<div className="group-hover:-rotate-45 animation">{endContent}</div>}
-    >
-      {children}
-    </Button>
+    <AnimationClick>
+      <Button
+        className={`bg-gradient text-light font-bold rounded-full py-6 px-10 group ${className}`}
+        endContent={
+          <div className="group-hover:-rotate-45 animation">{endContent}</div>
+        }
+      >
+        {children}
+      </Button>
+    </AnimationClick>
   );
 };
 
